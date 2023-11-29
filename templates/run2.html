@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 20px;
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #51c0f0;
+            background-image: -webkit-linear-gradient(20deg, rgba(255, 255, 255, .4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, .4) 75%, transparent 75%);
+            border-radius: 20px;
+            border: 6px solid transparent;
+            background-clip: content-box;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #30aee3;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #073763;
+            text-align: center;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: #004658;
+            color: #fff;
+        }
+
+        .footer-wave-svg {
+            background-color: transparent;
+            display: block;
+            height: 30px;
+            position: relative;
+            top: -1px;
+            width: 100%;
+        }
+
+        .footer-wave-path {
+            fill: #fffff2;
+        }
+
+        .footer-content {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1230px;
+            padding: 40px 15px 450px;
+            position: relative;
+        }
+
+        .footer-content-column {
+            box-sizing: border-box;
+            float: left;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+            color: #fff;
+        }
+
+        .footer-content-column ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-logo-link {
+            display: inline-block;
+        }
+
+        .footer-menu {
+            margin-top: 30px;
+        }
+
+        .footer-menu-name {
+            color: #fffff2;
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: .1em;
+            line-height: 18px;
+            margin-bottom: 0;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .footer-menu-list {
+            list-style: none;
+            margin-bottom: 0;
+            margin-top: 10px;
+            padding-left: 0;
+        }
+
+        .footer-menu-list li {
+            margin-top: 5px;
+        }
+
+        .footer-call-to-action-description {
+            color: #fffff2;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .footer-call-to-action-button:hover {
+            background-color: #fffff2;
+            color: #00bef0;
+        }
+
+        .button:last-of-type {
+            margin-right: 0;
+        }
+
+        .footer-call-to-action-button {
+            background-color: #027b9a;
+            border-radius: 21px;
+            color: #fffff2;
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: .1em;
+            line-height: 18px;
+            padding: 12px 30px;
+            margin: 0 10px 10px 0;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color .2s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .footer-call-to-action {
+            margin-top: 30px;
+        }
+
+        .footer-call-to-action-title {
+            color: #fffff2;
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: .1em;
+            line-height: 18px;
+            margin-bottom: 0;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .footer-call-to-action-link-wrapper {
+            margin-bottom: 0;
+            margin-top: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-call-to-action-link-wrapper a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-social-links {
+            bottom: 0;
+            height: 54px;
+            position: absolute;
+            right: 0;
+            width: 236px;
+        }
+
+        .footer-social-amoeba-svg {
+            height: 54px;
+            left: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 236px;
+        }
+
+        .footer-social-amoeba-path {
+            fill: #027b9a;
+        }
+
+        .footer-social-link.linkedin {
+            height: 26px;
+            left: 3px;
+            top: 11px;
+            width: 26px;
+        }
+
+        .footer-social-link {
+            display: block;
+            padding: 10px;
+            position: absolute;
+        }
+
+        .hidden-link-text {
+            position: absolute;
+            clip: rect(1px 1px 1px 1px);
+            clip: rect(1px, 1px, 1px, 1px);
+            -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+            clip-path: inset(0px 0px 99.9% 99.9%);
+            overflow: hidden;
+            height: 1px;
+            width: 1px;
+            padding: 0;
+            border: 0;
+            top: 50%;
+        }
+
+        .footer-social-icon-svg {
+            display: block;
+        }
+
+        .footer-social-icon-path {
+            fill: #fffff2;
+            transition: fill .2s;
+        }
+
+        .footer-social-link.twitter {
+            height: 28px;
+            left: 62px;
+            top: 3px;
+            width: 28px;
+        }
+
+        .footer-social-link.youtube {
+            height: 24px;
+            left: 123px;
+            top: 12px;
+            width: 24px;
+        }
+
+        .footer-social-link.github {
+            height: 34px;
+            left: 172px;
+            top: 7px;
+            width: 34px;
+        }
+
+        .footer-copyright {
+            background-color: #027b9a;
+            color: #fff;
+            padding: 15px 30px;
+            text-align: center;
+        }
+
+        .footer-copyright-wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1200px;
+        }
+
+        .footer-copyright-text {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .footer-copyright-link {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .row {
+            margin-top: 70px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .counter-container {
+            text-align: center;
+        }
+
+        .counter {
+            color: #f1c232;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .counter-name {
+            color: #fff;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        @media (min-width: 760px) {
+            .footer-content {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1230px;
+                padding: 40px 15px 450px;
+                position: relative;
+            }
+
+            .footer-wave-svg {
+                height: 50px;
+            }
+
+            .footer-content-column {
+                width: 24.99%;
+            }
+        }
+
+        @media (min-width: 568px) {
+            /* .footer-content-column {
+                width: 49.99%;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        
+        <footer class="footer">
+            <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"
+                preserveAspectRatio="none">
+                <path class="footer-wave-path"
+                    d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
+                </path>
+            </svg>
+            <div class="footer-content">
+                <div class="footer-content-column">
+                    <div class="footer-logo">
+                        <a class="footer-logo-link" href="#">
+                            <span class="hidden-link-text">LOGO</span>
+                            <h1>LOGO</h1>
+                        </a>
+                    </div>
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name"> Get Started</h2>
+                        <ul id="menu-get-started" class="footer-menu-list">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="#">Start</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="#">Documentation</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="#">Installation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Counting numbers content -->
+                <div class="row">
+                    <div class="counter-container">
+                        <h1><span id="counting-numbers1" class="counter">0</span></h1>
+                        <p class="counter-name">BRAIN DISEASE PATIENTS (2023)</p>
+                    </div>
+
+                    <div class="counter-container">
+                        <h1><span id="counting-numbers2" class="counter">0</span></h1>
+                        <p class="counter-name">DAYS OF OPERATION</p>
+                    </div>
+
+                    <div class="counter-container">
+                        <h1><span id="counting-numbers3" class="counter">0</span></h1>
+                        <p class="counter-name">DEATHS</p>
+                    </div>
+
+                    <div class="counter-container">
+                        <h1><span id="counting-numbers4" class="counter">0</span></h1>
+                        <p class="counter-name">SATISFIED CUSTOMERS</p>
+                    </div>
+                </div>
+                <!-- Your existing footer content -->
+
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-wrapper">
+                    <p class="footer-copyright-text">
+                        <a class="footer-copyright-link" href="#" target="_self"> ©2020. | Designed By: Pooja Nahelia. |
+                            All
+                            rights reserved. </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Set your target numbers
+            const targetNumbers = [24810, 9500, 18990, 2500];
+
+            // Get the elements where the counting numbers will be displayed
+            const countingNumbersElements = [
+                document.getElementById('counting-numbers1'),
+                document.getElementById('counting-numbers2'),
+                document.getElementById('counting-numbers3'),
+                document.getElementById('counting-numbers4'),
+            ];
+
+            // Function to animate counting numbers
+            function countNumbers(targetNumber, element) {
+                let currentNumber = 0;
+                const interval = setInterval(() => {
+                    element.textContent = currentNumber;
+                    currentNumber++;
+
+                    if (currentNumber > targetNumber) {
+                        clearInterval(interval);
+                    }
+                }, -10000000000000000); // Adjust the interval for smoother or faster animation
+            }
+
+            // Call the function for each target number and element
+            countingNumbersElements.forEach((element, index) => {
+                countNumbers(targetNumbers[index], element);
+            });
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Health Information</title>
+    <link rel="stylesheet" href="CSS/news.css ">
+    <!-- <link rel="stylesheet" href="CSS/AD.css "> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .switch {
+            background-color: rgb(202, 246, 246);
+            padding: 10px;
+        }
+
+        .switch a {
+            color: #000000;
+            font-size: 18px;
+            text-transform: uppercase;
+
+            padding: 16px;
+            text-decoration: none;
+            /* padding: 10px; */
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #brainTumorInfo {
+            display: flexbox;
+        }
+
+        #alzheimersInfo {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="switch">
+        <a href="#">Home</a>
+        <a href="#" onclick="showInfo('brainTumorInfo')">Brain Tumor</a>
+        <a href="#" onclick="showInfo('alzheimersInfo')">Alzheimer's</a>
+    </div>
+
+    <section>
+        <div id="brainTumorInfo">
+            <article id="post-105888" style="clear: both;"
+                class="post-105888 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-blog tag-children tag-foundation tag-pediatric tag-peds tag-rally">
+                <div class="entry-content">
+                    <h1 class="title-page h3">Brain Tumor Network Guides Patients and Empowers Care</h1>
+                    <div class="wp-block-image">
+                    </div>
+                    <p>Some months ago Brain Tumor Network was contacted by Rally Foundation who wanted to feature our
+                        organization in a featured blog post after hearing about the wonderful Navigation support one of
+                        their families received from our team. Read the full blog post on <a
+                            href="https://rallyfoundation.org/brain-tumor-network/" target="_blank"
+                            rel="noreferrer noopener">RallyFoundation.org</a>:</p>
+
+                    <hr class="wp-block-separator has-alpha-channel-opacity">
+                    <p>Rally Mom Tiffany shared with Rally Foundation the outstanding support their family has been
+                        receiving from the Brain Tumor Network (BTN) for her son and Rally Kid, Logan: “<strong>BTN has
+                            been a wonderful resource for our family. They are responsive, knowledgeable and
+                            compassionate.</strong>”</p>
+
+                    <p>BTN is the largest brain tumor patient support organization of its kind in the U.S. Since 2014,
+                        BTN has provided free navigation services to almost 2,000 patients. BTN’s pediatric brain tumor
+                        navigation program provides age-appropriate services for families with children under the age of
+                        18 whose primary diagnosis is a brain tumor. BTN partners with care teams to meet each
+                        individual patient’s goal of care.</p>
+
+                    <p><strong>How BTN Helps</strong><br>Led by Pediatric Neuro-Oncology Nurse Navigators, BTN’s
+                        pediatric services include:</p>
+                    <ul>
+                        <li>Diagnosis and treatment options education</li>
+
+                        <li>Treatment center identification</li>
+
+                        <li>Facilitation of second opinions with pediatric brain tumor specialists</li>
+
+                        <li>Personalized, nationwide clinical trial identification and assistance with enrollment</li>
+
+                        <li>Resources for family support</li>
+
+                        <li>Medical records collection and management</li>
+                    </ul>
+
+                    <p><strong>The Nuts and Bolts<br></strong>Manager of Patient Navigation Kendra, shared, “People
+                        often reach out during one of the most stressful times of their lives, right after a diagnosis,
+                        and we are here to offer personalized ongoing support.”</p>
+
+                    <p>“After calling BTN or completing the Get Support Form on our website, the BTN team will review
+                        and assess all needs and assign a navigator. The patients and their families will hear back from
+                        a BTN team member within 24 hours. Being able to connect with a person is invaluable. We know
+                        that hearing a person’s voice, having a human connection, is vital and provides comfort.”</p>
+
+                    <p>“Most importantly, we want you to know that we’re here. We help families take this journey step
+                        by step, from start to finish. Our team is deeply knowledgeable about brain tumors and can be a
+                        guiding force. We understand that sometimes families need a lot of help right in the beginning
+                        to get through choppy waters, while others count on our expertise through different stages. We
+                        even have a translation service on call to help people for whom English is a second language.
+                        BTN can offer bereavement support and can help identify peer and mentor support as well.”</p>
+
+                    <p>Notes Kendra: “We are very fortunate to be able to make an impact without any cost to the patient
+                        or his or her family. Our services are provided at no cost to patients, caregivers and
+                        healthcare professionals. Additionally, BTN does not receive funding from medical institutions
+                        or pharmaceutical companies and does not receive reimbursement or insurance coverage for
+                        services, resulting in the ability to provide completely unbiased services.”</p>
+
+                </div>
+            </article>
+        </div>
+
+        <div id="alzheimersInfo">
+            <h2>Alzheimer's Information</h2>
+            <p>Insert relevant information about Alzheimer's disease here.</p>
+        </div>
+    </section>
+
+    <script>
+        function showInfo(infoId) {
+            document.getElementById('brainTumorInfo').style.display = 'none';
+            document.getElementById('alzheimersInfo').style.display = 'none';
+
+            document.getElementById(infoId).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

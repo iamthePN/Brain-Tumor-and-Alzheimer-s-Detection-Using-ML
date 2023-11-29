@@ -1,0 +1,99 @@
+.index_img img {
+    margin-top: 70px;
+    height: 45rem;
+    width: 100%;
+}
+*{z-index:3;}
+
+.sec2 {
+    position: absolute;
+    left: 75%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+.sec2 h1{z-index: 2;}
+.p{
+    font-size: 20px;
+}
+.div .d1 {
+    border: 2px solid rgb(170, 159, 159);
+    border-radius: 5px;
+    background-color: rgb(170, 159, 159);
+    float: right;
+    width: 25%;
+    height: 40%;
+    margin: 4% 18% 2% 6%;
+    padding: 2% 5% 2% 5%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 0.5cm;
+}
+.d1:hover{
+    transform: scale(1.1, 1.1);
+}
+.div .d1 p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.div .d1 img {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.div .d2 {
+    border: 2px solid rgb(170, 159, 159);
+    border-radius: 5px;
+    background-color: rgb(170, 159, 159);
+    float: right;
+    width: 25%;
+    height: 40%;
+    margin: 4% 8% 2% 2%;
+    padding: 2% 5% 6% 5%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 0.5cm;
+}
+.d2:hover{
+    transform: scale(1.1, 1.1);
+}
+.div .d2 p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.div .d2 img {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.div .d3 {
+    border: 2px solid rgb(170, 159, 159);
+    border-radius: 5px;
+    background-color: rgb(170, 159, 159);
+    float: right;
+    width: 25%;
+    margin: 4% 4% 2% 2%;
+    padding: 2% 5% 5% 5%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 0.5cm;
+}
+.d3:hover{
+    transform: scale(1.1, 1.1);
+}
+.div .d3 p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.div .d3 img {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+.div{
+margin-bottom: 37%;
+}

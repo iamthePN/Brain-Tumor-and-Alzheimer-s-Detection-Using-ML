@@ -1,0 +1,79 @@
+.main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  padding: 20px;
+}
+
+.main {
+  padding-bottom: 50px;
+}
+
+.w3-bar,
+h1,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fa-anchor,
+.fa-coffee {
+  font-size: 200px;
+}
+
+.section {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.col {
+  text-align: center;
+}
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+  margin: 2px 2px;
+  padding: 5px;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+  margin: 2px 2px;
+  padding: 5px;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+  margin: 2px 2px;
+  padding: 5px;
+}
+
+input[type=email],
+input[type=password] {
+  margin: 5px;
+  padding: 10px;
+  width: 300px;
+}
+
+input[type=submit],
+input[type=reset] {
+  cursor: pointer;
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+fieldset {
+  width: 50%;
+  background-color: #ccc;
+  box-shadow: 0px 0px 10px #000000;
+  margin-top: 200px;
+  padding: 10px;
+}

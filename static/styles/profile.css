@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    margin-bottom: 40%;
+}
+
+.form {
+    background-color: rgb(223, 246, 246);
+    margin: 8% 25% 5% 25%;
+    float: left;
+
+}
+
+.form2 {
+    float: left;
+    padding-top: 16%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+
+.form2 img {
+    height: 40%;
+    width: 40%;
+    border-radius: 100px;
+}
+
+.form1 {
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    padding-top: 8%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    float: right;
+    margin-top: -45%;
+
+}
+
+.form1 label {
+    font-size: 18px;
+
+}
+
+.form1 input {
+    padding: 5%;
+    width: 100%;
+
+}

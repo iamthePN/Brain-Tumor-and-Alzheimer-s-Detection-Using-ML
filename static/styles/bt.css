@@ -1,0 +1,89 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            /* font-size: 40px;
+            margin-top: 45px; */
+            font-weight: 600;
+            font-size: 42px;
+            line-height: 52px;
+            color: #33333b;
+            text-align: center;
+            /* margin-top: 70px; */
+            text-shadow: 0px 2px #4d3f1e99;
+        }
+
+        #inp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            font-size: 40px;
+            border-radius: 7px;
+            height: 65px;
+            width: 210px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #image-preview {
+            max-width: 300px;
+            max-height: 300px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        h2 {
+            font-size: 30px
+        }
+
+        #cancel-btn,
+        #predict-btn {
+            font-size: 40px;
+            border-radius: 7px;
+            height: 55px;
+            width: 210px;
+            margin-top: 20px;
+            cursor: pointer;
+            display: none;
+            background-color: #9cb7b2c2;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            border-style: solid;
+            margin: 0px 485px;
+            padding: 30px 0px 30px 0px;
+            border-radius: 10px;
+            background-color: #dcd5c599;
+            text-shadow: 1px;
+        }
+
+        #upload-btn {
+            height: 60px;
+            width: 230px;
+            background-color: #9cb7b2c2;
+            color: #160606;
+            box-shadow: 0 4px 8px;
+        }
+
+        #dr {
+            font-size: 10px;
+        }
+        /* .upload_div{
+            margin-top: 20%;
+        } */

@@ -1,0 +1,28 @@
+.carousel-nav-icon {
+    height: 20px;
+    width: 20px;
+ }
+ .carousel-item {
+    .col, .col-sm, .col-md {
+       margin: 8px;
+       height: 100px;
+       background-size: cover;
+       background-position: center center;
+    }
+ }
+ .raw img{
+    height: 100px;
+    width: 100px
+ }
+ 
+ 
+ 
+ 
+ /* nothing below this point is needed*/
+ @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700,800,900&display=swap');
+
+ h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+ }
+ 
