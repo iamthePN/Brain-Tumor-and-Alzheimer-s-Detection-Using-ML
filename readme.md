@@ -1,21 +1,17 @@
-# Project Name
-
-[Short description of your project]
+# Brain Tumor and Alzheimer Detection Using Machine Learning
 
 ## Table of Contents
 - [About](#about)
-- [System](#Proposed System)
+- [System](#system)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#Prerequisites)
+  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  
-
 
 ## About
 
 The main goal of this project is to develop a machine-learning model that can accurately detect brain tumors and Alzheimer's disease at an early stage. 
 
-## Proposed System
+## Features
 
 Our proposed solution for detecting brain tumors and Alzheimer's disease using machine learning involves the use of deep learning algorithms such as convolutional neural networks (CNNs) and deploying the model on the web using Flask.
 We created a web application system capable of identifying brain diseases in MRI-scanned images.
@@ -24,7 +20,7 @@ We created a web application system capable of identifying brain diseases in MRI
 
 Run "pip install -r requirements.txt" to install the Prerequisites Libraries
 
-## Prerequisites 
+### Prerequisites
 
 1) Xampp
 2) Python
