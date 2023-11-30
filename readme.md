@@ -25,6 +25,7 @@ Run "pip install -r requirements.txt" to install the Prerequisites Libraries
 1) Xampp
 2) Python
 3) Libraries (Mentioned in "requirements.txt")
+4) Dataset (Tumor and Alzheimer's)
 
 ### Installation
 
@@ -41,6 +42,12 @@ Run "pip install -r requirements.txt" to install the Prerequisites Libraries
 Download the required machine learning models from the following link: https://drive.google.com/drive/folders/1Auaer1QZmBQt8vtB4GvvFvJRkySo2PdF?usp=sharing
     Ensure you have the necessary permissions to download and use these models.
     Store the Models in the Project Folder:
+
+3) Download the Dataset:
+
+Download the dataset from the following link: https://drive.google.com/drive/folders/1Auaer1QZmBQt8vtB4GvvFvJRkySo2PdF?usp=sharing
+    Ensure you have the necessary permissions to download and use these dataset.
+    Store the dataset in the Project Folder:
 
 4) Extract the downloaded models.
     Place the extracted model files in the designated folder within your project directory.
